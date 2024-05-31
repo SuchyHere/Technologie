@@ -1,0 +1,490 @@
+
+
+body{
+  background-color: white;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  position: relative;
+  justify-content: center;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 70px;
+  background-color: white;
+  padding: 0 20px;
+  border-bottom: 2px solid purple;
+}
+.centralbox{
+  width: 1500px;
+  height: 800px;
+  background-color: white;
+  margin-top: 55px;
+  padding-left: 210px;
+  padding-right: 210px;
+  border: 2px solid purple;
+}
+.logo-box {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 830px;
+   margin: 50px auto;
+   border: 2px solid purple;
+   width: 80%;
+ }
+
+.text-container{
+  color: #2F3035;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+}
+.text-container h2{
+  font-size: 60px;
+}
+.text-container p{
+  font-size: 26px;
+}
+
+
+.about-me-button {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  padding: 7px 15px;
+  font-size: 10px;
+  background-color: white;
+  color: purple;
+  border: 2px solid purple;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  outline: none;
+  margin-top: 10px;
+}
+.about-me-button:hover {
+  background-color: purple;
+  color: white;
+  transform: scale(1.05);
+}
+.center-logo {
+  width: 550px;
+  height: 400px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+.social-icons {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-right: 57px;
+}
+
+.social-icons a {
+  display: block;
+}
+
+.social-icons img {
+  width: 60px;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.social-icons a:hover img {
+  transform: scale(1.2);
+}
+
+.navigations {
+  display: flex;
+  align-items: center;
+}
+
+.navigation {
+  color: #2F3035;
+  margin-right: 40px;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 20px;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: italic;
+  white-space: nowrap;
+}
+.logo {
+  width: 80px;
+  height: 75px;
+  margin-left: 40px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  gap: 30px;
+  padding: 70px;
+  justify-content: center;
+  color: #2F3035;
+
+}
+.title{
+  font-family: "JetBrains Mono", monospace;
+  font-size: 50px;
+  position: absolute;
+  top: -75px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  white-space: nowrap;
+}
+.section-title {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 30px;
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 0 10px;
+  white-space: nowrap;
+}
+
+.work {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  align-items: start;
+  justify-content: start;
+  grid-column: 2 / 10;
+  padding: 40px;
+  border: 2px solid purple;
+  position: relative;
+  font-size: 25px;
+}
+.social{
+  width: 20px;
+  height: auto;
+}
+.project-img {
+  grid-row: 2;
+  position: relative;
+  width: 600px;
+  height: auto;
+  padding: 0 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.work-text {
+  grid-row: 3;
+  text-align: center;
+  padding-top: 20px;
+}
+.name{
+  font-family: "JetBrains Mono", monospace;
+  padding-bottom: 15px;
+  grid-row: 1;
+  text-align: center;
+}
+
+.about-me {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  grid-column: 2 / 10;
+  grid-row: 1;
+  padding: 40px;
+  border: 2px solid purple;
+  position: relative;
+  font-size: 20px;
+}
+.profile-photo {
+  margin-right: 20px;
+  width: 70px;
+  height: auto;
+  border-radius: 50%;
+}
+
+.skills {
+  grid-column: 2 / 10;
+  grid-row: 3;
+  padding: 40px;
+  border: 2px solid purple;
+  position: relative;
+  font-size: 20px;
+}
+.skills h3 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-family: "JetBrains Mono", monospace;
+}
+.specialization {
+  grid-column: 2 / 10;
+  grid-row: 5;
+  padding: 20px;
+  border: 2px solid purple;
+  position: relative;
+  font-size: 20px;
+}
+
+
+.section-container {
+  padding: 20px;
+  border: 2px solid purple;
+  margin: 10px;
+  position: relative;
+}
+
+.skills li {
+  list-style-type: none;
+}
+.contact-header {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.contact-header h1 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 36px;
+  color: #2F3035;
+}
+
+.contact-forms {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px 20px;
+  padding: 10px;
+  color: #2F3035;
+
+}
+
+.contact-form {
+  font-family: 'JetBrains Mono', monospace;
+  border: 2px solid purple;
+  padding: 20px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  min-height: 500px;
+  color: #2F3035;
+}
+
+
+
+.contact-form h2 {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+
+input[type="text"], input[type="email"], input[type="topic"]{
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0;
+  border: 1px solid purple;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+button {
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  padding: 7px 15px;
+  font-size: 15px;
+  background-color: white;
+  color: purple;
+  border: 2px solid purple;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  outline: none;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: purple;
+  color: #2F3035;
+  transform: scale(1.05);
+}
+.login-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 600px;
+  margin: 100px auto;
+  border: 2px solid purple;
+  width: 50%;
+  padding-top: 20px;
+}
+
+.login-header {
+  font-size: 36px;
+  margin-bottom: 50px;
+  background: white;
+  padding: 0 10px;
+}
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.login-form label {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 18px;
+  margin-bottom: 20px;
+  color: #2F3035;
+  align-items: center;
+}
+
+.login-form input{
+  width: 15vw;
+  min-width: 200px;
+  max-width: 300px;
+  padding: 12px;
+  margin-bottom: 25px;
+  border: 2px solid purple;
+  border-radius: 5px;
+  font-family: "JetBrains Mono", monospace;
+}
+
+.login-form button {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 18px;
+  background-color: white;
+  color: purple;
+  border: 2px solid purple;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.login-form button:hover {
+  background-color: purple;
+  color: white;
+  transform: scale(1.05);
+}
+.register {
+  color: #2F3035;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 20px;
+  padding: 10px 15px;
+  margin-top: 25px;
+  font-optical-sizing: auto;
+  font-weight: 450;
+  font-style: italic;
+  white-space: nowrap;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+th {
+  background-color: purple;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  border: 1px solid #ddd;
+
+}
+
+td {
+  padding: 10px;
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+  border: 1px solid #ddd;
+  color: #2F3035;
+
+}
+
+.null {
+  font-size: 30px;
+  font-family: 'JetBrains Mono', monospace;
+  text-align: center;
+  padding: 25px 0;
+  color: #2F3035;
+
+}
+.login-box p{
+  color: red;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.admin-table th, .admin-table td {
+  border: 1px solid #ddd;
+  padding: 4px;
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.admin-table th {
+  background-color: purple;
+  color: white;
+}
+
+.admin-table .null {
+  font-size: 18px;
+  color: red;
+  text-align: center;
+  font-family: 'JetBrains Mono', monospace;
+}
+.users-table {
+  background-color: #f9f9f9;
+}
+
+.users-table th {
+  background-color: purple;
+}
+.bookings-table {
+  background-color: #fff;
+}
+
+.bookings-table th {
+  background-color: purple;
+}
+
+@media only screen and (min-width: 1200px) {
+  .main-content {
+    width: 75%;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1199px) {
+  .main-content {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  .main-content {
+    width: 100%;
+  }
+}
+
+
+
